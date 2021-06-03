@@ -1,0 +1,14 @@
+[
+  {
+      "login":"libs@gmail.com",
+      "password":"libasse",
+      "role":"ROLE_ADMIN"
+  },
+    {
+        "login":"dad@gmail.com",
+        "password":"dadadada",
+        "role":"ROLE_JOUEUR"
+    }
+
+    
+]
