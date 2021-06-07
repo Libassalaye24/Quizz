@@ -1,11 +1,15 @@
-admin
+
 <?php 
 if (!est_admin()) header("location:".WEB_ROUTE.'?controlleurs=security&view=connexion');
     
      if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-        if (isset($_POST['action'])) {
-            if ($_POST['action'] == 'list.question') {
-                require(ROUTE_DIR.'views/joueur/list.question.html.php');
+        if (isset($_GET['view'])) {
+            if ($_GET['view'] == 'list.question') {
+                require(ROUTE_DIR.'views/admin/list.question.html.php');
+            }elseif ($_GET['view'] == 'creer.question') {
+                require(ROUTE_DIR.'views/admin/creer.question.html.php'); 
+            }elseif ($_GET['view'] == 'list.joueur') {
+                require(ROUTE_DIR.'views/admin/list.joueur.html.php'); 
             }
            
         }else {
