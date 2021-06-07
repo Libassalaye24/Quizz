@@ -3,7 +3,9 @@
     $arrayError=$_SESSION['arrayError'];
     unset($_SESSION['arrayError']);
   }
-
+  if (est_admin()) {
+    require_once(ROUTE_DIR.'views/IMC/menu.html.php');
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,7 +13,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Connexion</title>
+    <title>Inscription</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -22,7 +24,7 @@
     <div class="registration-form mb-40">
         <form method="POST" action="<?php WEB_ROUTE ?>">
             <div style="text-align: center; color:darkred;" >
-              <h3>Connexion</h3>
+              <h3>Inscription</h3>
             </div>
             <input type="hidden" name="controlleurs" value="security">
               <input type="hidden" name="action" value="inscription">
@@ -48,13 +50,14 @@
            
             <div class="form-group">
             <label for=""><b>Login</label>
-                <input type="text" class="form-control item" id="email" name="mail" placeholder="Email">
+                <input type="text" class="form-control item" id="" name="login" placeholder="Email">
             </div>
             <div class="danger">
-                <?=isset($arrayError['email']) ? $arrayError['email'] : ""; ?>
+                <?=isset($arrayError['login']) ? $arrayError['login'] : ""; ?>
+                <?=isset($arrayError['login1']) ? $arrayError['login1'] : ""; ?>
               </div>
               <div class="row">
-                  <div class="col">
+                  <div class="col-6">
                   <div class="form-group">
                     <label for=""><b>Mot de passe</label>
                         <input type="password" class="form-control item" id="password" name="mdp" placeholder="Password">
@@ -87,15 +90,22 @@
                 <label for=""><b>Date de Naissance</label>
                     <input type="text" class="form-control item" name="date" id="birth-date" placeholder="Birth Date">
                 </div>
+                <div class="danger">
+                <?=isset($arrayError['date']) ? $arrayError['date'] : ""; ?>
+              </div>
             </div>
+            
           
             <div class="form-group" >
                 <label for="">Choisir un Avatar</label>
                     <img href=".../public/img/avatar.png" />
-                    <input type="file" name="avatar" class="form-control item" name='file1' />
+                    <input type="file" name="avatar" class="form-control item"  />
             </div>
+            <div class="danger">
+                <?=isset($arrayError['avatar']) ? $arrayError['avatar'] : ""; ?>
+              </div>
             <div class="form-group">
-                <button type="submit" name="submit"  class="btn btn-danger red form-control item">Create Account</button>
+                <button type="submit" name="submit"  class="btn btn-danger redl form-control item">Create Account</button>
             </div>
         </form>
         
@@ -112,13 +122,16 @@
         .danger{
             color: darkred;
         }
-	.red{
-        background-color: darkred;
-    }
-    .red:hover{
-        background-color: white;
-        color: darkred;
-    }
+        .redl{
+            background-color: #fff;
+            color: darkred;
+        }
+        .redl:hover{
+            background-color: #fff;
+            color: darkred;
+        }
+	
+   
 .registration-form{
 	padding: 50px 0;
 }
