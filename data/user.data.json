@@ -1,14 +1,103 @@
 [
-  {
-      "login":"libs@gmail.com",
-      "password":"libasse",
-      "role":"ROLE_ADMIN"
-  },
     {
-        "login":"dad@gmail.com",
-        "password":"dadadada",
-        "role":"ROLE_JOUEUR"
+        "login": "libs@gmail.com",
+        "password": "libasse",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "prenom": "wane",
+        "name": "laye",
+        "login": "coudy@gmail.com",
+        "mdp": "wanecoudy",
+        "password": "wanecoudy",
+        "sexe": "femme",
+        "date": "24\/11\/2001",
+        "avatar": "Avatar.jpg",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "prenom": "diop",
+        "name": "diop",
+        "login": "diop@gmail.com",
+        "mdp": "wanecoudy",
+        "password": "wanecoudy",
+        "sexe": "homme",
+        "date": "24\/11\/2001",
+        "avatar": "Avatar.jpg",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "prenom": "amine",
+        "name": "cisse",
+        "login": "mina@gmail.com",
+        "mdp": "minacisse",
+        "password": "minacisse",
+        "sexe": "femme",
+        "date": "24\/11\/2001",
+        "avatar": "Avatar.jpg",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "prenom": "efkkef",
+        "name": "ekmlef",
+        "login": "thiat@gmail.com",
+        "mdp": "thiatlaye",
+        "password": "thiatlaye",
+        "sexe": "homme",
+        "date": "24\/11\/2001",
+        "avatar": "Avatar.jpg",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "prenom": "bara",
+        "name": "frj",
+        "login": "bra@gmail.com",
+        "mdp": "thiatlaye",
+        "password": "thiatlaye",
+        "sexe": "homme",
+        "date": "24\/05\/2000",
+        "avatar": "Avatar.jpg",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "prenom": "dw  kw",
+        "name": "wdkmwd",
+        "login": "wane@gmail.com",
+        "mdp": "wanecoudy",
+        "password": "wanecoudy",
+        "sexe": "homme",
+        "date": "22\/02\/2001",
+        "avatar": "Avatar.jpg",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "prenom": "seynabou",
+        "name": "ka",
+        "login": "seynabou@gmail.com",
+        "mdp": "seynabou",
+        "password": "seynabou",
+        "date": "12\/05\/1999",
+        "avatar": "Avatar.jpg",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "prenom": "libasse",
+        "name": "wane",
+        "login": "nd@mail.com",
+        "mdp": "nd@passe",
+        "password": "nd@passe",
+        "date": "24\/11\/2001",
+        "avatar": "image.png",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "prenom": "bara",
+        "name": "fall",
+        "login": "fall@mail.com",
+        "mdp": "fall@123",
+        "password": "fall@123",
+        "date": "02\/03\/2000",
+        "avatar": "Avatar.jpg",
+        "role": "ROLE_ADMIN"
     }
-
-    
 ]
